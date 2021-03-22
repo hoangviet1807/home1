@@ -1,0 +1,273 @@
+  
+{% include 'header.html'%}
+
+{% block content %}
+<html>
+  <head>  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <title>CTS TMA</title>
+  </head>
+  
+  <style>
+    .container {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%
+    }
+  
+    .column {
+      padding: 30px;
+      flex: 1;
+      display: flex
+    }
+  
+    .img {
+      padding: 30px;
+    }
+  
+    .row:after {
+      max-width: 1200px;
+      display: flex;
+      flex: 1;
+    }
+    h1 {
+      color: red;
+    }
+    .container span{
+      color: rgb(180, 20, 20);
+      text-transform: uppercase;
+      display:block;
+    }
+    .text1{
+      color: red;
+      font-size: 100px;
+      font-weight: 500;
+      letter-spacing:8px;
+      margin-bottom: 20px;
+      position:relative;
+      animation: text 3s 1;
+     
+    }
+    .text2{
+      font-size: 100px;
+      font-weight: 700;
+      color:red
+   
+    }
+
+    @keyframes text{
+      0%{
+        color: rgba(12, 75, 27, 0.918);
+        margin-bottom:  -150px;
+      }
+      30%{
+        letter-spacing: 25px;
+        margin-bottom:  -40px
+      }
+      85%{
+        letter-spacing: 8px;
+        margin-bottom:  -40px
+      }
+    }
+    .label{
+      color: rgba(0, 0, 0, 0);
+      font-size: 50px;
+      font-weight: 500;
+    }
+    
+  </style>
+          <body>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="false">
+              <!--Indicators-->
+              
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+              </ol>
+           <div  class="carousel-inner" role="listbox">
+             <div class="carousel-item active">
+               <img class="mySlides" src="/image/header.png" width="100%" height="800" style="opacity: 0.9;">
+            
+              </div>
+             <div class="carousel-item">
+               <img class="mySlides" src="/image/hinh1 (1).jpg" width="100%" height="800" style="opacity:0.9">
+            
+              </div>
+             <div class="carousel-item">  
+              <img class="mySlides" src="/image/hinh1 (2).jpg" width="100%" height="800" style="opacity:0.9">
+            </div>
+
+            </div>
+          </div>
+
+          <div class="container">
+            <span class="text1">Welcome IN</span>
+            <span class="text2">CTS TMA</span>
+        </div>
+         </body>     
+     
+           <br>
+           <br>
+            <div class="row">
+                    <div class="column">
+                      <img class="mySlides" src="/image/avatar.jpg" width="500px" height="500px">
+                    </div>
+                    <div class="column">
+                      <span style="font-size: 50px; font-weight: 700; font-family:'Times New Roman', Times, serif; margin-right: 10px">Giới thiệu</span>
+                        <p style="font-family: 'Times New Roman', Times, serif;" align="left">CTS TMA là trang web được phát triển bởi Intern TMA</p>
+                        <p style="font-family: 'Times New Roman', Times, serif;" align="left">Ở đây bạn có thể thử thách bản thân, tích lũy kinh nghiệm và có thể nhận được những phần quà hấp dẫn</p>
+                    </div>
+            </div>
+        <!-- --- -->
+        <br><br>
+         
+        <!--  -->
+
+        <div class="counter-up">
+          <div class="content">
+            <div class="box">
+              <div class="icon"><i class="fas fa-history" style="color: rgba(14, 158, 1, 0.788)"></i></div>
+              <div class="counter">724</div>
+              <div class="text">Working Hours</div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fas fa-gift" style="color:rgb(194, 0, 58);"></i></div>
+              <div class="counter">508</div>
+              <div class="text">Completed Projects</div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fas fa-users" style="color: rgba(224, 228, 15, 0.938)" ></i></div>
+              <div class="counter">436</div>
+              <div class="text">Happy Clients</div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fas fa-award" style="color: rgba(9, 111, 228, 0.938)"></i></div>
+              <div class="counter">120</div>
+              <div class="text">Awards Received</div>
+            </div>
+          </div>
+        </div>
+        
+        <script>
+          $(document).ready(function(){
+            $('.counter').counterUp({
+              delay: 3,
+            });
+          });
+          </script>
+      </form>
+      
+      </div>
+</div>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+{% endblock %}
+</html>
+{% include 'footer.html'%}
+
+<script>
+  $(function(){
+    $("#myCarousel").carousel({
+         pause: false
+    });
+});
+</script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+.counter-up{
+background: url("images/bg-2.jpeg") no-repeat;
+min-height: 50vh;
+background-size: cover;
+background-attachment: fixed;
+padding: 0 50px;
+position: relative;
+display: flex;
+align-items: center;
+}
+.counter-up::before{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: rgba(255, 255, 255, 0.8);
+}
+.counter-up .content{
+z-index: 1;
+position: relative;
+display: flex;
+width: 100%;
+height: 100%;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+}
+.counter-up .content .box{
+border: 1px dashed rgba(255,255,255,0.6);
+width: calc(25% - 30px);
+border-radius: 5px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+padding: 20px;
+}
+.content .box .icon{
+font-size: 60px;
+color: #030000;
+}
+.content .box .counter{
+font-size: 50px;
+font-weight: 500;
+color: #000000;
+font-family: sans-serif;
+}
+.content .box .text{
+font-weight: 400;
+color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 1036px) {
+.counter-up{
+  padding: 50px 50px 0 50px;
+}
+.counter-up .content .box{
+  width: calc(50% - 30px);
+  margin-bottom: 50px;
+}
+}
+@media screen and (max-width: 580px) {
+.counter-up .content .box{
+  width: 100%;
+}
+}
+@media screen and (max-width: 500px) {
+.wrapper{
+  padding: 20px;
+}
+.counter-up{
+  padding: 30px 20px 0 20px;
+}
+}
+
+</style>
