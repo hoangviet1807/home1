@@ -1,137 +1,158 @@
-<!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Counter up Animation on Scroll | CodingNepal</title> -->
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-</head>
-<body>
 
-  <div class="counter-up">
-    <div class="content">
-      <div class="box">
-        <div class="icon"><i class="fas fa-history"></i></div>
-        <div class="counter">724</div>
-        <div class="text">Working Hours</div>
-      </div>
-      <div class="box">
-        <div class="icon"><i class="fas fa-gift"></i></div>
-        <div class="counter">508</div>
-        <div class="text">Completed Projects</div>
-      </div>
-      <div class="box">
-        <div class="icon"><i class="fas fa-users"></i></div>
-        <div class="counter">436</div>
-        <div class="text">Happy Clients</div>
-      </div>
-      <div class="box">
-        <div class="icon"><i class="fas fa-award"></i></div>
-        <div class="counter">120</div>
-        <div class="text">Awards Received</div>
-      </div>
+
+<main class="container1">
+  <section class="card">
+    <img src="https://i.ibb.co/VvC0vpN/paint-1.png" alt="" />
+    <div>
+      <h3>Acrylic Painting One</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+        enim laudantium, animi veniam libero eveniet culpa unde perferendis
+        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+        officia. Ab, delectus.
+      </p>
+      <a href="#" class="btn">Buy Now</a>
     </div>
-  </div>
+  </section>
 
-  <script>
-  $(document).ready(function(){
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1200
-    });
-  });
-  </script>
+  <section class="card" data-aos="fade-left">
+    <img src="https://i.ibb.co/3NHjDcW/paint-2.png" alt="" />
+    <div>
+      <h3>Acrylic Painting Two</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+        enim laudantium, animi veniam libero eveniet culpa unde perferendis
+        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+        officia. Ab, delectus.
+      </p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </section>
 
-</body>
-</html>
+  <section class="card" data-aos="fade-right">
+    <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" />
+    <div>
+      <h3>Acrylic Painting Three</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+        enim laudantium, animi veniam libero eveniet culpa unde perferendis
+        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+        officia. Ab, delectus.
+      </p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </section>
+
+  <section class="card" data-aos="fade-left">
+    <img src="https://i.ibb.co/5LkJFRP/paint-4.png" alt="" />
+    <div>
+      <h3>Acrylic Painting Four</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+        enim laudantium, animi veniam libero eveniet culpa unde perferendis
+        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+        officia. Ab, delectus.
+      </p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </section>
+
+  <section class="card" data-aos="fade-right">
+    <img src="https://i.ibb.co/61R8Q2y/paint-5.png" alt="" />
+    <div>
+      <h3>Acrylic Painting Five</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+        enim laudantium, animi veniam libero eveniet culpa unde perferendis
+        illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+        officia. Ab, delectus.
+      </p>
+      <a href="#" class="btn">Buy Now</a>
+    </div>
+  </section>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+ 
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
-.counter-up{
-  background: url("images/bg-2.jpeg") no-repeat;
-  min-height: 50vh;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 0 50px;
-  position: relative;
-  display: flex;
-  align-items: center;
+body {
+  font-size: 1.3rem;
+  font-family: 'Oswald', sans-serif;
+  background: #f9f9f9;
 }
-.counter-up::before{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 100%;
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container1 {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+
+  
+
+img {
   width: 100%;
-  background: rgba(0,0,0,0.8);
 }
-.counter-up .content{
-  z-index: 1;
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
 }
-.counter-up .content .box{
-  border: 1px dashed rgba(255,255,255,0.6);
-  width: calc(25% - 30px);
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  padding: 20px;
+
+.card h3 {
+  margin-bottom: 2rem;
 }
-.content .box .icon{
-  font-size: 48px;
-  color: #e6e6e6;
+
+.card img {
+  height: 400px;
 }
-.content .box .counter{
-  font-size: 50px;
-  font-weight: 500;
-  color: #f2f2f2;
-  font-family: sans-serif;
+
+.card > div {
+  padding: 2rem;
 }
-.content .box .text{
-  font-weight: 400;
-  color: #ccc;
+
+.card:nth-child(even) img {
+  order: 2;
 }
-@media screen and (max-width: 1036px) {
-  .counter-up{
-    padding: 50px 50px 0 50px;
-  }
-  .counter-up .content .box{
-    width: calc(50% - 30px);
-    margin-bottom: 50px;
-  }
+
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
 }
-@media screen and (max-width: 580px) {
-  .counter-up .content .box{
-    width: 100%;
-  }
+
+.btn:hover {
+  opacity: 0.8;
 }
-@media screen and (max-width: 500px) {
-  .wrapper{
-    padding: 20px;
-  }
-  .counter-up{
-    padding: 30px 20px 0 20px;
+
+@media(max-width:600px) {
+  .card {
+    display: block;
   }
 }
 
